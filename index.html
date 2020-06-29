@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>jQuery Crash Course | Effects and Animate</h1>
+        </div>
+    </header>
+    <section>
+        <button class="slidetoggle">slideToggle</button>
 
+    </section>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur voluptates fugit quas ullam deserunt? Consectetur rem delectus dicta voluptatem perspiciatis, eum mollitia sint excepturi dignissimos? Porro, nesciunt! Aliquam iusto voluptatum amet aperiam, nobis aliquid pariatur aut ad a odio explicabo hic, quasi sapiente minus repellat assumenda veniam qui voluptatibus, natus debitis recusandae saepe sint laboriosam dolorem. Dignissimos fugit dolorem aperiam eaque obcaecati laborum laboriosam reprehenderit, perspiciatis aspernatur mollitia atque similique sed! Molestias eveniet labore praesentium modi molestiae! Autem aliquam veritatis minus mollitia ab quibusdam aliquid, quam animi nihil, totam ipsam iusto enim natus ea eligendi hic porro? Dignissimos, eum necessitatibus.</p>
+    </div>
+    <p id="offer">Offer</p>
+    <div class="adv">
+       X <br> 
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere porro hic quidem adipisci modi ex asperiores. Tempora est doloremque, vitae harum voluptatem, error ad repellendus provident assumenda sit voluptatum, ipsam iste esse ea magnam labore culpa vel consectetur praesentium porro atque. Dicta commodi debitis deserunt. Quae reprehenderit iusto qui commodi. Quisquam vero dolor cum et magnam cupiditate veritatis voluptates! Maxime aliquam dolorem esse laudantium exercitationem numquam quo praesentium iure, commodi nisi atque beatae corporis a cupiditate! Consectetur ab exercitationem non dolore commodi. Earum odio, cupiditate praesentium laudantium similique corporis mollitia architecto quidem nam doloremque ipsum non ea temporibus ipsa!
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slidetoggle').click(function(){
+                $('.box').slideToggle(2000);
+            });
+            $('#offer').click(function(){
+                $('.adv').animate({
+                    left: 150,
+                    width:'600px',
+                    height:'300px'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
